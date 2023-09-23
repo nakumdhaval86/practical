@@ -1,11 +1,7 @@
-import 'package:dhavalpracticaltest/constants/app_colors.dart';
-import 'package:dhavalpracticaltest/constants/app_constant.dart';
 import 'package:dhavalpracticaltest/constants/app_strings.dart';
 import 'package:dhavalpracticaltest/controllers/homepage_controller.dart';
 import 'package:dhavalpracticaltest/widgets/home/student_list_item.dart';
 import 'package:flutter/material.dart';
-
-import '../widgets/home/title_subtitle.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -30,9 +26,9 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Container(
+            const SizedBox(
               height: 100,
-              child: const Text("Carousale Banner"),
+              child: Text("Display Carousale Banner"),
             ),
             Expanded(
               child: Padding(

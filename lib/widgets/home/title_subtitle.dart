@@ -2,7 +2,7 @@ import 'package:dhavalpracticaltest/constants/app_textstyles.dart';
 import 'package:flutter/material.dart';
 
 class TitleSubtitleWidget extends StatelessWidget {
-  TitleSubtitleWidget({
+  const TitleSubtitleWidget({
     Key? key,
     required this.title,
     required this.subTitle,
@@ -18,8 +18,8 @@ class TitleSubtitleWidget extends StatelessWidget {
 
   final String title;
   final String subTitle;
-  Color? titleColor = Colors.grey.shade400;
-  Color? subTitleColor = Colors.grey;
+  final Color? titleColor;
+  final Color? subTitleColor;
   final TextStyle? titleTextStyle;
   final TextStyle? subtitleTextStyle;
 
@@ -30,14 +30,13 @@ class TitleSubtitleWidget extends StatelessWidget {
       children: [
         Text(
           title,
-          style: titleTextStyle ??
-              AppTextStyles.fontPoppins10Medium.copyWith(color: titleColor),
+          style: titleTextStyle ?? AppTextStyles.fontPoppins10Medium.copyWith(color: titleColor ?? Colors.grey.shade400),
         ),
         Text(
           subTitle,
           style: subtitleTextStyle ??
               AppTextStyles.fontPoppins14Medium.copyWith(
-                color: subTitleColor,
+                color: subTitleColor ?? Colors.grey,
                 fontWeight: FontWeight.w500,
               ),
         )

@@ -1,4 +1,3 @@
-import 'package:dhavalpracticaltest/constants/app_colors.dart';
 import 'package:dhavalpracticaltest/constants/app_strings.dart';
 import 'package:dhavalpracticaltest/constants/app_textstyles.dart';
 import 'package:dhavalpracticaltest/controllers/addmarks_controller.dart';
@@ -9,7 +8,7 @@ import 'package:flutter/services.dart';
 import '../widgets/common/custom_textfield.dart';
 
 class AddMarksPage extends StatelessWidget {
-  AddMarksPage({Key? key}) : super(key: key);
+  const AddMarksPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
